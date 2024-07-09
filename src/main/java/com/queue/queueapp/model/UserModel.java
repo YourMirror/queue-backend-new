@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.intellij.lang.annotations.Pattern;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class UserModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Добавьте авто-генерацию ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String phoneNumber;
